@@ -1,6 +1,9 @@
-﻿@{
+﻿@model AvantPoc.Models.PolicyDetailsInfo
+
+@{
     Layout = null;
 }
+
 
 <!DOCTYPE html>
 
@@ -10,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>View/Edit Policy</title>
     <link rel="stylesheet" href="~/Content/themes/base/jquery-ui.css">
- 
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -19,10 +22,10 @@
 
     <script>
   $( function() {
-    
+
       var dialog, form;
 
-     
+
     //  var name = $("#name");
     //  var email = $("#email");
     //  var password = $("#password");
@@ -221,9 +224,10 @@
             </div>
         </div>
     }
-    
-    
+
+
     @Scripts.Render("~/bundles/bootstrap")
 
 </body>
 </html>
+

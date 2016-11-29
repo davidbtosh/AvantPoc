@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvantPoc.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,10 @@ namespace AvantPoc.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            PolicyDetailsInfo model = new PolicyDetailsInfo();
+            model.CreateMockData();
+
+            return View(model);
         }
     }
 }
